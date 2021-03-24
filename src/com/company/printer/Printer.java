@@ -1,7 +1,7 @@
 package com.company.printer;
 
 public class Printer {
-    public static void printDocument(String text, int copies){
+    public static synchronized void printDocument(String text, int copies){
         for (int i = 0; i < copies; i++){
             System.out.println(text);
             try {
